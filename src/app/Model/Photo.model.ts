@@ -1,4 +1,4 @@
 export interface Photo {
-    src: string;
-    title: string;
+    src?: string;
+    title?: string;
 }
