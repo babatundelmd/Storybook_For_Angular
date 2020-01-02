@@ -10,7 +10,7 @@ export class PhotoUiCardComponent implements OnInit {
   @Input() name: string;
   @Input() jobDescription: string;
   @Input() email: string;
-  @Input() phone: string;
+  @Input() phone: number;
   @Input() photo: Photo;
 
 
