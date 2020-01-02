@@ -1,8 +1,8 @@
-import { storiesOf, addParameters } from '@storybook/angular';
-import { withNotes } from '@storybook/addon-notes';
+import { storiesOf } from '@storybook/angular';
 import { action } from '@storybook/addon-actions';
 import { PhotoUiCardComponent } from '../app/photo-ui-card/photo-ui-card.component'
 import { withCssResources } from '@storybook/addon-cssresources';
+
 
 const src = "assets/avatar-kora.jpg";
 const title = "Avatar Kora";
@@ -55,3 +55,17 @@ storiesOf('app-photo-ui-card', module)
             }
         }
     }))
+
+    .add('with notes', () => ({
+        component: PhotoUiCardComponent,
+        props: {
+            photo: {
+
+            }
+        }
+    }),
+        {
+            notes: "This is a simple photo ui component to demonstrate how storybook for angular can be used"
+        }
+
+    )
