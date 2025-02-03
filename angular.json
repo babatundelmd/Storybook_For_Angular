@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "storybook-for-angular"
+  "defaultProject": "storybook-for-angular",
+  "cli": {
+    "analytics": "55b16331-64e8-4bfb-a6b4-81c69bd057ec"
+  }
 }
